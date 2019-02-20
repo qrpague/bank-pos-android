@@ -1,0 +1,71 @@
+<section class="cm-dados-deposito">
+    <form #formDadosDeposito="ngForm"><br><br>
+        <sc-card>
+            <sc-card-content>
+                <sc-grid-col col="12">
+                        <h6>DEPÓSITO EM CONTA</h6>
+                </sc-grid-col>
+                <sc-form-field>
+                    <input 
+                        scInput 
+                        placeholder="Documento"
+                        name="input_documento" 
+                        type="number" 
+                        ngModel 
+                        required />
+                </sc-form-field>
+                <sc-form-field>
+                    <input 
+                        scInput 
+                        placeholder="Valor"
+                        name="input_valor" 
+                        type="number" 
+                        class="android-number"
+                        ngModel
+                        required />
+                </sc-form-field>
+                <sc-form-field>
+                    <input 
+                        scInput 
+                        placeholder="Nome Completo"
+                        name="input_nome_completo" 
+                        type="text" 
+                        ngModel 
+                        required />
+                </sc-form-field>
+                <sc-form-field>
+                    <input 
+                        scInput 
+                        placeholder="Cpf do depositante"
+                        name="input_cpf_depositante" 
+                        type="number" 
+                        ngModel
+                        required />
+                </sc-form-field>
+                <sc-form-field>
+                    <input 
+                        scInput 
+                        placeholder="RG do depositante"
+                        name="input_rg_depositante" 
+                        type="text" 
+                        ngModel 
+                        required />
+                </sc-form-field>
+                <sc-form-field>
+                    <input 
+                        scInput 
+                        placeholder="Órgão emissor"
+                        name="input_orgao_emissor" 
+                        type="text" 
+                        ngModel 
+                        required />
+                </sc-form-field>
+            </sc-card-content>
+            <a routerLink="/depositos/confirmar-deposito" routerLinkActive="active" class="ss-btn ss-btn-success">
+                DEPOSITAR
+                <i class="material-icons">arrow_forward</i>
+            </a>
+            <button class="ss-btn ss-btn-neutral">CANCELAR</button>
+        </sc-card>
+    </form>
+</section>

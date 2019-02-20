@@ -1,0 +1,56 @@
+/* You can add global styles to this file, and also import other style files */
+
+.ss-navbar .ss-navbar-info a.ss-navbar-item.ss-navbar-title {
+  float: none;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+img[alt*="logo"] {
+  width: 30vw !important;
+  border-radius: 30px;
+  margin-top: 28px;
+}
+.ss-navbar-item.ss-navbar-title {
+  margin-bottom: 14px;
+}
+.app-cm .cm-informa-conta .ss-form-control {
+  width: 90vw;
+}
+.ss-btn.ss-btn-success {
+  margin-top: 36px;
+}
+qrcode img {
+  width: 70vw;
+  margin: auto;
+  margin-top: 110px;
+}
+.qrcode-info{
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.app-cm section.cm-sucesso-deposito {
+  background: #fff;
+}
+.app-cm .cm-falha-deposito, .app-cm section.cm-sucesso-deposito {
+  color: #000;
+}
+/*.cm-sucesso-deposito h5 {
+  color: #7ab51d;
+}*/
+.app-cm .ss-btn {
+  position: fixed;
+  width: 90vw;
+  left: 50%;
+  margin-left: -45vw;
+  bottom: 2vh;
+}
+.app-cm .cm-informa-conta .ss-btn {
+  position: relative;
+  margin-top: 154px;
+}
+/* .app-cm .cm-informa-conta {
+  padding-bottom: 80px;
+
+} */

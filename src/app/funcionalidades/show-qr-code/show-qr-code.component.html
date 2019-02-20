@@ -1,0 +1,9 @@
+<section class="cm-informa-conta">
+
+  <qrcode [qrdata]="linkPagamento" [size]="256" [level]="'M'"></qrcode>
+  <sc-grid-col col="12">
+      <p class="qrcode-info">Leia o QR Code com a câmera para efetuar o pagamento</p>
+      <h3 class="qrcode-info">{{valor | currency:'BRL':true}}</h3>
+
+  </sc-grid-col>
+</section>

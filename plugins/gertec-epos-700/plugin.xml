@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="gertec-epos-700" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+  <name>GertecEPOS700</name>
+  <js-module name="GertecEPOS700" src="www/GertecEPOS700.js">
+    <clobbers target="gertecEPOS700" />
+  </js-module>
+  <platform name="android">
+    <config-file parent="/*" target="res/xml/config.xml">
+      <feature name="GertecEPOS700">
+        <param name="android-package" value="gertecepos700.GertecEPOS700" />
+      </feature>
+    </config-file>
+    <config-file parent="/*" target="AndroidManifest.xml">
+    </config-file>
+    <source-file src="src/android/GertecEPOS700.java" target-dir="src/gertecepos700/GertecEPOS700" />
+    <lib-file src="src/android/libs/GPOS700_750v1.0.jar"/>
+  </platform>
+</plugin>

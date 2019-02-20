@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "Correspondente Móvel",
+  "short_name": "Correspondente Móvel",
+  "version": "io.cordova.hellocordova",
+  "description": "Aplicativo Correspondente Móvel",
+  "author": "Gilluan Formiga",
+  "icons": [],
+  "start_url": "index.html"
+}

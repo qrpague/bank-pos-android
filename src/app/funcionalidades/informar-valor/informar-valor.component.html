@@ -1,0 +1,24 @@
+<section class="cm-informa-conta  app-cm-content">
+  <form [formGroup]="formInformarConta" (ngSubmit)="gerarQrCode()">
+    <div class="ss-grid">
+      <div class="col-12">
+        <img src="assets/images/burguer-logo.jpg" alt="logo" />
+
+        <h6>{{payloadInicial.terminal.descricao}}</h6>
+
+
+        <h6>{{payloadInicial.cnpjInstituicao | mask: '00.000.000/0000-00' }}</h6>
+
+        <p>INFORME O VALOR DA COMPRA</p>
+
+        <input scInput currencyMask [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }" formControlName="valor"
+          scLabel="Valor" inputmode="numeric" scIcon="ico-person" type="tel" />
+
+
+        <button type="submit" class="ss-btn ss-btn-success">
+          GERAR QR CODE
+        </button>
+      </div>
+    </div>
+  </form>
+</section>

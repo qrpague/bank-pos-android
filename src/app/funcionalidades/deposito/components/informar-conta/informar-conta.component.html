@@ -1,0 +1,30 @@
+<section class="cm-informa-conta">
+    <form [formGroup]="formInformarConta" (ngSubmit)="consultar()">
+        <br><br>
+        <sc-grid-col col="12">
+            <sc-card>
+                <sc-card-content>
+                    <sc-grid-col col="12">
+                        <h6>DEPÓSITO EM CONTA</h6>
+                    </sc-grid-col>
+                    <img style="margin-top: 24px;" src="assets/images/bg-informa_conta.png">
+                    <p>INFORME O Nº DA CONTA</p>
+                    <sc-form-field>
+                        <input
+                            scInput
+                            formControlName="numeroConta"
+                            scLabel="Conta"
+                            inputmode="numeric"
+                            scIcon="ico-person"
+                            scMask="999-9999"
+                            type="string" />
+                    </sc-form-field>
+                    <button type="submit" class="ss-btn ss-btn-success" >
+                            CONSULTAR
+                            <i class="material-icons">arrow_forward</i>
+                    </button>
+                </sc-card-content>
+            </sc-card>
+        </sc-grid-col>
+    </form>
+</section>
